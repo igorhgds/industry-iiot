@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS work_orders(
     priority        VARCHAR(50),
     status          VARCHAR(50),
     created_at      TIMESTAMP       NOT NULL,
-    closes_at       TIMESTAMP,
+    closed_at       TIMESTAMP,
 
     CONSTRAINT fk_orders_alert FOREIGN KEY (alert_id) REFERENCES alerts (alert_id),
     CONSTRAINT fk_orders_equipment FOREIGN KEY (equipment_id) REFERENCES equipments (equipment_id),

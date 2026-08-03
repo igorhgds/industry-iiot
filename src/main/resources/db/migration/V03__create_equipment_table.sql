@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS equipments(
     status              VARCHAR(50),
     sector_id           UUID,
     created_at          TIMESTAMP       NOT NULL,
-    update_at           TIMESTAMP,
+    updated_at          TIMESTAMP,
 
     CONSTRAINT fk_equipments_sector FOREIGN KEY (sector_id) REFERENCES sectors (sector_id)
 );
